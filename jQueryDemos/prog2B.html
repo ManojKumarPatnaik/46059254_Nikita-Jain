@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Selectors By ElementID</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//Retrieving the content from testDiv in html format
+	var data = $('#testDiv').html();
+	
+	//Applying the content to targetDiv in text format
+	$('#targetDiv').text(data);
+});
+</script>
+</head>
+<body>
+<div id="testDiv">
+<b>This is my Test Div text</b>
+</div>
+<div id="targetDiv"/>
+</body>
+</html>

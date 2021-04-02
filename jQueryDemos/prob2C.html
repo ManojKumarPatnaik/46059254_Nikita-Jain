@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Selectors using class Name</title>
+<style type="text/css">
+.blueDiv{background-color:blue; color:white;}
+.redDiv{background-color:red; color:white;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function ( ) {
+	//Selects divs that do not have the class 'redDiv' using not filter
+	var collection = $('div:not(.redDiv)');
+	collection.css('border','5px solid green');
+	collection.css('padding','5px');
+});
+</script>
+</head>
+<body>
+<div class="blueDiv">
+<p>First BlueDiv - Paragraph.</p>
+</div>
+<div class="redDiv">
+<p>First RedDiv - Paragraph.</p>
+</div>
+<div class="blueDiv">
+<p>Second BlueDiv - Paragraph.</p>
+</div>
+</body>
+</html>

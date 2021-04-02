@@ -1,0 +1,30 @@
+<html>
+<head><title>Embedding Script tag in HTML Document</title>
+
+<script>
+document.write("Embedded js used here in head");
+</script>
+<hr>
+<script src="Hello.js">
+</script>
+
+</head>
+<body>
+
+<script>
+document.write("Embedded js used here in body"); 
+</script>
+
+<hr>
+
+<p><code>The actual script is in external script file called "Hello.js"</code></p>
+
+<script>
+var s = dispHello();
+document.write(s);
+</script>
+
+<hr>
+
+</body>
+</html>

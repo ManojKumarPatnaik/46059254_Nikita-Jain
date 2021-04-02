@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Using JSON in jQuery</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var collection = $('#targetDiv');
+	//using JSON to avoid Method chaining
+	collection.css({"border":"5px solid green",
+					"padding":"10px",
+					"background-color":"blue",
+					"color":"white",
+					"font-size":"24pt",
+					"font-family":"verdana",
+					"font-weight":"bold",
+					"text-transform":"uppercase"
+				  });
+});
+</script>
+</head>
+<body>
+<div id="targetDiv">
+<p>Using JSON in jQuery</p>
+</div>
+</body>
+</html>

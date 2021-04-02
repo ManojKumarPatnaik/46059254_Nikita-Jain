@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Input Selectors</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var $radChecked = $(':radio:checked');
+	$("#targetDiv").text('')
+	.append("<b>Index: </b>" +$radChecked.index() + "<br/>")
+	.append("<b>Value: </b>" +$radChecked.val());
+});
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<input type="radio" name="gender" value="Male">Male</input>
+<input type="radio" name="gender" value="Female" checked="checked">Female</input>
+</td>
+</tr>
+<tr>
+<td>
+<div id="targetDiv" />
+</td>
+</tr>
+</table>
+</body>
+</html>

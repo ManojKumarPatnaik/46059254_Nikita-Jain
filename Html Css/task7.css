@@ -1,0 +1,51 @@
+p{
+    text-align: center;
+    color:blueviolet;
+    background-color: burlywood;
+}
+#p1{
+    text-decoration: wavy;
+}
+#p2{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+#p3{
+    text-decoration: overline;
+}
+#p4{
+    text-decoration: line-through;
+}
+#p5{
+    text-decoration: underline;
+}
+#p6{
+    text-transform: uppercase;
+}
+#p7{
+    text-indent: 50px;
+}
+#p8{
+    letter-spacing: 3px;
+}
+#p9{
+    line-height: 0.8;
+}
+#p10{
+    word-spacing: 10px;
+}
+#p11{
+    text-shadow: 2px 2px black;
+}
+#p12{
+    font-family: "Times New Roman", Times, serif;
+}
+#p13{
+    font-style: italic;
+}
+#p14{
+    font-weight: bold;
+}
+#p15{
+    font-size: 40px;
+}

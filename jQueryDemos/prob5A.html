@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Click Event</title>
+<style type="text/css">
+.custom{background-color:blue;color:white;font-size:24pt;border:10px solid green}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#btnAddRemove').click(function(){
+		$('#targetDiv').toggleClass('custom');
+	});
+});
+</script>
+</head>
+<body>
+<p>
+<input type="button" id="btnAddRemove" value="Add Style / Remove Style"/>
+</p>
+<div id="targetDiv">
+Div tag formatted with CSS Style
+</div>
+</body>
+</html>

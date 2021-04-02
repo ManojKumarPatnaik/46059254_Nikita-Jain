@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Check/Uncheck all checkboxes at once</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var $chkBox = $("input:checkbox[id$=chkAll]");
+	var $tblChkBox = $("table.chk input:checkbox");
+	$chkBox.click(function() {
+		$tblChkBox.attr('checked', $chkBox.is(':checked'));
+	});
+	// UncheckschkAll when a checked CheckBox in cbList is unchecked
+	$tblChkBox.click(function(e) {
+		if (!$(this)[0].checked) {
+			$chkBox.attr("checked", false);
+		}
+	});
+}); 
+</script></head>
+<body>
+<div class="smallDiv">
+<h2>Check/Uncheck all checkboxes at once</h2><br />
+<span title="Click here to check/uncheck all checkboxes at once">
+<input id="chkAll" type="checkbox" name="chkAll" /><label>Do All</label>
+</span>
+<br /><hr />
+<table id="cbList" class="chk" border="0">
+<tr>
+<td><input id="cbList0" type="checkbox" name="cbList0" /><label>Option One</label></td>
+</tr><tr>
+<td><input id="cbList1" type="checkbox" name="cbList1" /><label>Option Two</label></td></tr>
+<tr>
+<td><input id="cbList2" type="checkbox" name="cbList2" /><label>Option Three</label></td></tr>
+<tr>
+<td><input id="cbList3" type="checkbox" name="cbList3" /><label>Option Four</label></td></tr>
+</table>
+</div>
+</body>
+</html>

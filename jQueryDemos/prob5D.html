@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Limiting number of characters in textarea</title>
+<style type="text/css">
+.custom{background-color:red}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var limit = 25;
+	var $tb = $('#comments');
+	
+	$tb.keyup(function(e) {
+		var len = $(this).val().length;
+		if (len> limit) 
+			this.value = this.value.substring(0, limit);
+		else
+			$('#charLeft').text(limit - len + " characters left");
+	});
+});
+</script>
+</head>
+<body>
+<div>
+<h2>Type into this textbox which accepts 25 characters overall</h2>
+<textarea id="comments" rows="5" cols="40"></textarea>
+<br/>
+<span id="charLeft"></span>
+</div>
+</body>
+</html>

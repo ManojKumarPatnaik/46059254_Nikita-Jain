@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Selectors By Attributes</title>
+<style type="text/css">
+.applyStyles {color:white;background-color:black;text-transform:uppercase;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function ( ) {
+	var textBoxes = $('input[type="text"]');
+	textBoxes.addClass("applyStyles");
+});
+</script>
+</head>
+<body>
+<table><tr>
+<td align="right"><span>Name : </span></td>
+<td><input type="text"/></td></tr>
+<tr>
+<td align="right"><span>City : </span></td>
+<td><input type="text"/></td></tr>
+</body></html>

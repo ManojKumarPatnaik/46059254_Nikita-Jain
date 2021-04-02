@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <script>
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June","July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var today = new Date();
+            const dayNames = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = monthNames[today.getMonth()]
+            var yyyy = today.getFullYear();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            var day = dayNames[today.getDay()];
+            document.write(day+" "+mm+" "+dd+" "+h+":"+m+":"+s+" "+yyyy+"<br>");
+            if(h<12){
+                document.write("Good morning");
+            }
+            else if(h<17){
+                document.write("Good Afternoon");
+            }
+            else{
+                document.write("Good Evening");
+            }
+        </script>
+    </body>
+</html>

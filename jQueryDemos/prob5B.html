@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Preventing Cut-Copy-Paste</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+		$('input[id="txtSample"]').bind('cut copy paste', function(e) {
+			e.preventDefault();
+			alert('You cannot ' + e.type + ' text!');
+		});
+});
+</script>
+</head>
+<body>
+<div>
+Special Textbox : <input id="txtSample" type="text"/>
+</div>
+</body>
+</html>

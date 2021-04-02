@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Sorting list items using jQuery</title>
+<style type="text/css">
+.java{
+list-style-image:url('image42.png');
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	if(confirm('Are you sure to sort these JEE technologies?'))
+	{
+		//Applying JavaScript built-in sort() function 
+		var sortedjava = $('.ilearn_menu li').sort(function(o, n) {
+		return $(o).text() < $(n).text() ? -1 : 1;
+		});
+		//Applying Style
+		sortedjava.addClass('java');
+		//Removing Node
+		$('#sourceDiv').remove();
+		//Appending the sorted data in targetDiv
+		$('#targetDiv').append(sortedjava);
+	}
+});
+</script>
+</head>
+<body>
+<div id="sourceDiv">
+<ul class="ilearn_menu">
+<li>Struts</li>
+<li>JSP</li>
+<li>Servlets</li>
+<li>EJB</li>
+<li>RMI</li>
+</ul>
+</div>
+<div id="targetDiv"></div>
+</body>
+</html>

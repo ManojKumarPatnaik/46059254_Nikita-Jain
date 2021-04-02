@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Mouse Button identification</title>
+<style type="text/css">
+.custom{background-color:blue;color:white;font-size:24pt;border:10px solid green}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#targetDiv').mousedown(function(event) 
+	{     
+		switch (event.which) 
+		{  
+			case 1:
+				alert('Left mouse button pressed');             
+				break;         
+			case 2:             
+				alert('Middle mouse button pressed');             
+				break;         
+			case 3:             
+				alert('Right mouse button pressed');             
+				break;         
+			default:             
+				alert('You have a strange mouse');     
+		} 
+	}); 
+}); 
+</script>
+</head>
+<body>
+<div id="targetDiv" class="custom">
+Click here to know which mouse button is pressed
+</div>
+</body>
+</html>

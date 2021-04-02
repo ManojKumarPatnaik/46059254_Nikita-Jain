@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            div{
+                border: 2px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Create an Application Form which has all the possible various (older version) elements covered in it, with Submit, Calcel, Reset buttons in right Border-->
+        <div>
+        <form action ="" method="GET">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"></input><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"></input><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"></input><br>
+                <label for="student">Student:</label><br>
+                <input type="checkbox" id="student" name="student"></input><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"></input><br>
+                <label for = "Branch">Branch:</label><br>
+                <input list = "branch"></input><br>
+                <datalist id="branch">
+                    <option value="CSE">
+                    <option value="IT">
+                    <option value="ECE">
+                  </datalist>
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="email"></input><br>
+                <label for="resume">Add your resume:</label><br>
+                <input type="file" id="resume" name="resume"></input><br>
+                <label for="toi">Time of interview:</label><br>
+                <input type="time" id="toi" name="toi"></input><br>
+                <input type = "submit" style="float: right;"></input>
+                <button style="float: right;">Cancel</button>
+                <button style="float: right;">Reset</button><br>
+        </form>
+    </div>
+    </body>
+</html>

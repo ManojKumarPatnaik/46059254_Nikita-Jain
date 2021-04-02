@@ -1,0 +1,27 @@
+/*universal selector*/
+*{
+    text-align: center;
+}
+
+/*group selector*/
+p{
+    color: blue;
+    background-color: cyan;
+}
+
+/* element selector*/
+h1{
+    color: blueviolet;
+    background-color: rosybrown;
+}
+
+/*class selector*/
+.classpara{
+    background-color: burlywood;
+}
+
+/*id selector*/
+#idpara{
+    background-color: yellowgreen;
+}
+

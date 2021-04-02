@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Event Trigger</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#btnSecond').click(function(){
+		alert('Second Button Clicked');
+	});
+	$('#btnFirst').click(function(){
+		$('#btnSecond').trigger("click");
+	});
+}); 
+</script>
+</head>
+<body><div>
+<input id="btnFirst" type="button" value="First" />
+<input id="btnSecond" type="button" value="Second" />
+</div></body>
+</html>

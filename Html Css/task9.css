@@ -1,0 +1,36 @@
+.div1{
+    border:5px  darkblue;
+    border-style: dotted;
+    color:lightblue;
+    background-color: teal;
+}
+.div2{
+    border: 5px gray;
+    border-style: ridge;
+    color: lightcyan;
+    background-color: indianred;
+}
+.div3{
+    border: 5px indigo;
+    color:lightcyan;
+    background-color: goldenrod;
+    border-style: dashed;
+}
+.div4{
+    border:5px teal;
+    color: palegreen;
+    background-color: rebeccapurple;
+    border-style: double;
+}
+.div5{
+    border:5px crimson;
+    color:black;
+    background-color: violet;
+    border-style: groove;
+}
+.div6{
+    border:5px goldenrod;
+    color:lightcoral;
+    background-color: darkorchid;
+    border-style: solid;
+}
