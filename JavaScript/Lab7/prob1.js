@@ -1,23 +1,40 @@
-function orderplaced(){
-    qty1=document.getElementById('qty1').value;
-    qty2=document.getElementById('qty2').value;
-    qty3=document.getElementById('qty3').value;
-    qty4=document.getElementById('qty4').value;
-    
-    if(qty1=="" && qty2=="" && qty3=="" && qty4==""){
-        alert("Enter some product quantity to order");
-    }
-    else{
-        window.open("subprob1.html", "","width=500,height=400");
-    }
-}
-function billing(){
-    var q1=document.getElementById('q1');
-    var q2=document.getElementById('q2');
-    var q3=document.getElementById('q3');
-    var q4=document.getElementById('q4');
-    q1.value=qty1;
-    q2.value=qty2;
-    q3.value=qty3;
-    q4.value=qty4;
+var count =1000;
+function validate(){
+	var bqty=document.getElementById('bqty');
+	var cqty=document.getElementById('cqty');
+	var mqty=document.getElementById('mqty');
+	var lqty=document.getElementById('lqty');
+
+	if (bqty.value=="" && cqty.value==""&& mqty.value==""&& lqty.value==""){
+		alert("No items selected");
+		return false;
+	}
+	else{
+		
+		
+		var a = Number(bqty.value)
+		var b = Number(cqty.value)
+		var c = Number(mqty.value)
+		var d = Number(lqty.value)
+		count = (a*20)+(b*30)+(c*40)+(d*50);
+		var mywindow= window.open("","","width=500,height=400");
+		mywindow.document.write("<h1 style=\"text-align: center\">Invoice</h1>")
+		mywindow.document.write("<table border=\"2px\", style=\"background-color: white\"><tr><th>product</th><th>quantity</th><th>price</th><th>total</th></tr>");
+		if (a>0){
+		mywindow.document.write("<tr><td>Barbie Doll</td><td>"+a+"</td><td>20</td><td>"+a*20+"</td></tr>")
+	}
+	if (b>0){
+		mywindow.document.write("<tr><td>Calculator</td><td>"+b+"</td><td>20</td><td>"+b*30+"</td></tr>")
+	}
+	if (c>0){
+		mywindow.document.write("<tr><td>Mobile Phone</td><td>"+c+"</td><td>20</td><td>"+c*40+"</td></tr>")
+	}
+	if (d>0){
+		mywindow.document.write("<tr><td>LG DVD</td><td>"+d+"</td><td>20</td><td>"+d*50+"</td></tr>")
+	}
+
+		
+		mywindow.document.write("</table>");
+
+	}
 }
